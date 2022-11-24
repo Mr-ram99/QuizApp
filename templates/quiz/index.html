@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+  }
+</style>
+<body>
+  {% include "quiz/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <h1 class="display-2 text-warning">Let's Quiz</h1>
+    <p class="display-4 d-none d-sm-block">Teachers can create tests of multiple subjects and assign to students.</p>
+    <p class="lead">Student can give tests and get instant results.</p>
+
+    
+
+    <p class="lead">Sign up if you haven't already.</p>
+    <p><strong> Start Your Journey Here:</strong></p>
+    <a href="/student/studentclick" class="btn btn-lg btn-info" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i>Student</a>
+    <a href="/teacher/teacherclick" class="btn btn-lg btn-success" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i>Teacher</a>
+    <br><br><br>
+  </div>  
+</section>
+  {% include "quiz/footer.html" %}
+
+
+</body>
+
+</html>
